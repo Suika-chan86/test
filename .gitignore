@@ -1,0 +1,23 @@
+# --- C 语言相关 ---
+# 忽略所有没有后缀的文件（这是 C 编译出的运行程序）
+# 这一招在 Linux 下很管用，因为源码都有后缀 (.c, .h)
+*
+!*.*
+!*/
+
+# --- Python 相关 ---
+# 忽略 Python 运行产生的缓存文件夹
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- 编辑器相关 ---
+# 忽略 VS Code 的本地设置和缓存
+.vscode/
+.history/
+*.log
+
+# --- 系统相关 ---
+# 忽略 Mac 或 Windows 产生的系统缩略图文件
+.DS_Store
+Thumbs.db
